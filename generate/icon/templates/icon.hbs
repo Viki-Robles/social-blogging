@@ -1,0 +1,27 @@
+/** @jsxRuntime classic */
+/** @jsx jsx */
+import { jsx } from 'theme-ui'
+import { SquareIconProps } from './icons.models'
+
+export const {{pascalCase name}}Icon = ({
+  size = '1rem',
+  sx,
+  ...rest
+}: SquareIconProps): JSX.Element => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 30 30"
+      sx={{{ obj "
+        color: 'currentColor',
+        width: size,
+        height: size,
+        ...sx,
+     "}}}
+      {...rest}
+      fill="currentColor"
+    >
+
+    </svg>
+  )
+}
