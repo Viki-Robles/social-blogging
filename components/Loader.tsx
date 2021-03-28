@@ -5,7 +5,7 @@ export interface LoaderProps {
 }
 
 const Loader: FC<LoaderProps> = ({ show }) => {
-  return show ? <div className="loader"></div> : null;
+  return !show && <div className="loader"></div>;
 };
 
 export default Loader;
